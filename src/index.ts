@@ -49,10 +49,10 @@ async function main() {
       video: {
         facingMode: "user",
         width: {
-          ideal: 960
+          ideal: 1280
         },
         height: {
-          ideal: 540
+          ideal: 720
         }
       },
     })
@@ -69,7 +69,7 @@ async function main() {
   }
 
   const piecesDetector = new PiecesDetector()
-  piecesDetector.setProcessRatio(0.5)
+  piecesDetector.setProcessRatio(0.2)
 
   let frames = 0
   let pieces: Piece[] | null = null
