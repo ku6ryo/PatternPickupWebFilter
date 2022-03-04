@@ -80,7 +80,13 @@ async function main() {
     stats.begin()
     cameraCanvas.getContext("2d")!.drawImage(cameraVideo, 0, 0)
 
+    if (holdingPiece) {
+      mainContext.filter = "grayscale(100%)"
+    } else {
+      mainContext.filter = "none"
+    }
     mainContext.drawImage(cameraVideo, 0, 0)
+    mainContext.filter = "none"
     if (frames % 3 === 0) {
       pieces = piecesDetector.process(cameraCanvas)
       /*
