@@ -1,0 +1,27 @@
+{
+  "name": "pattern-pickup",
+  "version": "1.0.0",
+  "devDependencies": {},
+  "scripts": {
+    "start": "webpack serve",
+    "build": "webpack build"
+  },
+  "author": "Ryo Kuroyanagi",
+  "license": "MIT",
+  "description": "",
+  "dependencies": {
+    "@mediapipe/hands": "^0.4.1635986972",
+    "@tensorflow-models/hand-pose-detection": "^2.0.0",
+    "@tensorflow/tfjs-converter": "^3.14.0",
+    "@tensorflow/tfjs-core": "^3.14.0",
+    "@types/stats.js": "^0.17.0",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "stats.js": "^0.17.0",
+    "ts-loader": "^9.2.7",
+    "typescript": "^4.6.2",
+    "webpack": "^5.69.1",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4"
+  }
+}
