@@ -76,6 +76,7 @@ export class PiecesDetector {
             0, 0, tmpCanvas.width, tmpCanvas.height
           )
           tmpContext.globalCompositeOperation = "destination-in"
+          tmpContext.filter = "blur(3px)"
           tmpContext.beginPath();
           for (let j = 0; j < contour.size().height; j++) {
             const px = contour.data32S[j * 2] / this.#processSizeRatio - x
